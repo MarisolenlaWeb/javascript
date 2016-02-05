@@ -25,6 +25,7 @@ function suma(num1, num2){
  
 
 
+
 console.log(suma(1,1));
 
 
@@ -58,3 +59,22 @@ function validar(parametro1, parametro2){
 
 	return msj;
 }
+
+// Funcion resultado numerico
+
+
+function numeros(numero1){
+
+	var respuesta= "No es un numero";
+
+	if (typeof(numero1)=="number") {
+		respuesta = numero1;
+	}else{
+		//No es numero
+		if (numero1/1) {
+			respuesta = Number(numero1);
+
+		}
+	};
+
+
